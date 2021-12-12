@@ -32,6 +32,11 @@ public class UserController {
         return userService.getAll();
     }
 
+    /**
+     * Get = Trae un usuario por id
+     * @param id
+     * @return
+     */
     @GetMapping("/{id}")
     public Optional<User> getUser(@PathVariable("id") int id){
         return userService.getUser(id);
